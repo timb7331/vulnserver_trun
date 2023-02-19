@@ -19,7 +19,9 @@ Now we have gained code execution.
 
 **What does the shellcode do?**
 
-The shellcode gets the proc address of LoadLibaryA, loads user32.dll (because of MessageBoxA), gets the proc address of MessageBoxA.
-Finally, it just setups the call like this
-eax = MessageBoxA(NULL, "Hello World!", NULL, MB_OK);
-call eax
+ 1. Get ProcAddress of LoadLibaryA
+ 2. Loads user32.dll (because of MessageBoxA)
+ 3. Get ProcAddress of MessageBoxA
+ 4. Setup MessageBoxA call MessageBoxA(NULL, "Hello World!", NULL, MB_OK);
+ 5. call eax
+
