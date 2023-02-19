@@ -18,6 +18,7 @@ Now we just need a gadget to jmp esp, luckily since this is an easy target, ther
 Now we have gained code execution.
 
 **What does the shellcode do?**
+
 The shellcode gets the proc address of LoadLibaryA, loads user32.dll (because of MessageBoxA), gets the proc address of MessageBoxA.
 Finally, it just setups the call like this
 eax = MessageBoxA(NULL, "Hello World!", NULL, MB_OK);
