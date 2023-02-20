@@ -17,6 +17,8 @@ Now we just need a gadget to jmp esp, luckily since this is an easy target, ther
 
 Now we have gained code execution.
 
+![enter image description here](https://i.imgur.com/7acExSH.png)
+
 **What does the shellcode do?**
 
  1. Get ProcAddress of LoadLibaryA
