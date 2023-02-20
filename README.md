@@ -5,7 +5,7 @@ i might publish my other solutions aswell, but i would need to clean them up a b
 
 ![enter image description here](https://i.imgur.com/tivxflY.png)
 
-Function 3 copies the contents from the heap onto a buffer on the stack without doing any boundary checks. causing a overflow. 
+Function 3 copies the contents from the heap into a buffer on the stack without doing any boundary checks. causing a overflow. 
 
 ![enter image description here](https://i.imgur.com/DyKUWBC.png)
 
